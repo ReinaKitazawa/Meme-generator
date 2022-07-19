@@ -1,5 +1,6 @@
 import React from "react";
 import "./Meme.css";
+import DownloadIcon from "@mui/icons-material/Download";
 
 export default function Meme() {
   const [meme, setMeme] = React.useState({
@@ -34,6 +35,11 @@ export default function Meme() {
       [name]: value,
     }));
   }
+  const download = () => {
+    const newImage = new Image();
+    newImage.src = `{meme}.jpg`;
+    console.log(newImage);
+  };
 
   return (
     <main>
@@ -63,6 +69,9 @@ export default function Meme() {
         <h2 className="meme--text top">{meme.topText}</h2>
         <h2 className="meme--text bottom">{meme.bottomText}</h2>
       </div>
+      {/* <a href={newImage} download> */}
+      <DownloadIcon onClick={download} />
+      {/* </a> */}
     </main>
   );
 }
