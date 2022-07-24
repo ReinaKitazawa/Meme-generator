@@ -16,7 +16,7 @@ main {
   border-radius: 5px;
   border: 1px solid #d5d4d8;
   text-indent: 5px;
-  padding: 7px 0px;
+  padding: 10px 0px;
 }
 
 .form--button {
@@ -27,7 +27,8 @@ main {
   background-color: #fec9f1;
   color: white;
   font-weight: bold;
-  padding: 7px;
+  padding: 10px;
+  font-size: 1rem;
 }
 .form--button:hover {
   opacity: 0.7;
